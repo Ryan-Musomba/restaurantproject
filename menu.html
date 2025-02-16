@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home-Tasty Diner</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+  rel="stylesheet"
+/>
+
+
+<style>
+  body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.contact-section {
+            background-color: black;
+            color: white;
+            padding: 30px 10px;
+            margin-top: 20%;
+        }
+        .footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        
+        }
+.msg-col a{
+  display: inline-block;
+  text-decoration: none;
+  color: #555;
+  background: rgb(52, 48, 48);
+  font-size: 15px;
+  padding: 10px 35px;
+  border-radius: 30px;
+  margin-top: 25px;
+}
+body {
+    min-height: 100vh;
+    position: relative;
+    margin: 0;
+    padding-bottom: 100px; 
+    
+
+  }
+  
+ 
+ .menu-section {
+            padding: 50px 0;
+            background-color: #f8f9fa;
+        }
+
+        .card {
+            width: 100%; 
+            height: 370px; 
+            border-radius: 10px;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .card img {
+            height: 180px; 
+            object-fit: cover; 
+        }
+
+        .card-body {
+            padding: 15px;
+        }
+
+        .card-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        .card-text {
+            font-size: 0.9rem;
+            color: #555;
+        }
+
+        .btn-order {
+            background-color: #ff6600;
+            color: white;
+            border-radius: 20px;
+            padding: 8px 20px;
+            font-size: 14px;
+        }
+
+        .btn-order:hover {
+            background-color: #cc5200;
+        }
+
+        .price {
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: #28a745; 
+            margin: 8px 0;
+        }
+
+</style>
+</head>
+<body >
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+          <div class="collapse navbar-collapse container-fluid" id="navbarNavAltMarkup">
+                
+                <a class="navbar-brand mx-auto " href="#">Tasty Diner</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav justify-content-center w-100">
+                    <a class="nav-link active" aria-current="page" href="home.html">HOME</a>
+                    <a class="nav-link active" href="menu.html">MENU</a>
+                    <a class="nav-link active" href="about.html">ABOUT</a>
+                    <a class="nav-link active" href="contact.html">CONTACT</a>
+                </div>
+                <ul class="navbar-nav d-flex flex-row">
+                    <!-- Icons -->
+                    <li class="nav-item me-3 me-lg-0">
+                        <a class="nav-link" href="#">
+                            <i class="fas fa-user"></i>
+                        </a>
+                      </li>
+                    <li class="nav-item me-3 me-lg-0">
+                        <a class="nav-link" href="#" aria-label="Shopping Cart">
+                            <i class="fas fa-shopping-cart"></i>
+                          </a>
+                    </li>
+                    <li class="nav-item me-3 me-lg-0">
+                      <a class="nav-link" href="#">
+                        <i class='fas fa-search'></i>
+                      </a>
+                    </li>
+                   </ul>
+              </div>
+              
+              <div class="d-flex align-items-center">
+                <button data-mdb-ripple-init type="button" class="btn me-3" 
+        style="background-color: #ff6600; color: white; border: none;">
+    Order Online
+</button>
+            </div>
+          </nav>
+
+    </header>
+    <section class="menu-section text-center">
+        <h2 class="mb-4">Our Delicious Menu</h2>
+        <div class="container">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card">
+                        <img src="burger.avif" class="card-img-top" alt="Burger">
+                        <div class="card-body">
+                            <h5 class="card-title">Cheese Burger</h5>
+                            <p class="card-text">Juicy beef patty with fresh lettuce, tomato, and melted cheese. <br>
+                            </p>
+                            <p class="price">Ksh.1000</p>
+                            
+                            <button class="btn btn-order" >Order Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="pasta.avif" class="card-img-top" alt="Pasta">
+                        <div class="card-body">
+                            <h5 class="card-title">Italian Pasta</h5>
+                            <p class="card-text">Delicious homemade pasta tossed in a rich tomato sauce.</p>
+                            <p class="price">Ksh.900</p>
+                            <button class="btn btn-order">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="pizza.avif" class="card-img-top" alt="Pizza">
+                        <div class="card-body">
+                            <h5 class="card-title">Pepperoni Pizza</h5>
+                            <p class="card-text">Classic Italian pizza topped with spicy pepperoni and cheese.</p>
+                            <p class="price">Ksh.1500</p>
+                            <button class="btn btn-order">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="steak.avif" class="card-img-top" alt="Steak">
+                        <div class="card-body">
+                            <h5 class="card-title">Grilled Steak</h5>
+                            <p class="card-text">Perfectly grilled steak served with garlic butter and veggies.</p>
+                            <p class="price">Ksh.1000</p>
+                            <button class="btn btn-order">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="sushi.avif" class="card-img-top" alt="Sushi">
+                        <div class="card-body">
+                            <h5 class="card-title">Fresh Sushi</h5>
+                            <p class="card-text">Authentic Japanese sushi rolls made with fresh seafood.</p>
+                            <p class="price">Ksh.2000</p>
+                            <button class="btn btn-order">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="salad.avif" class="card-img-top" alt="Salad">
+                        <div class="card-body">
+                            <h5 class="card-title">Healthy Salad</h5>
+                            <p class="card-text">A fresh and crispy garden salad with vinaigrette dressing.</p>
+                            <p class="price">Ksh.1000</p>
+                            <button class="btn btn-order">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="dessert.avif" class="card-img-top" alt="Dessert">
+                        <div class="card-body">
+                            <h5 class="card-title">Chocolate Cake</h5>
+                            <p class="card-text">Moist chocolate cake topped with rich chocolate ganache.</p>
+                            <p class="price">Ksh.1200</p>
+                            <button class="btn btn-order">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="coffee.avif" class="card-img-top" alt="Coffee">
+                        <div class="card-body">
+                            <h5 class="card-title">Hot Coffee</h5>
+                            <p class="card-text">Freshly brewed coffee with a deep and rich flavor.</p>
+                            <p class="price">Ksh.900</p>
+                            <button class="btn btn-order">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card">
+                        <img src="juice.avif" class="card-img-top" alt="Juice">
+                        <div class="card-body">
+                            <h5 class="card-title">Fresh Juice</h5>
+                            <p class="card-text">A refreshing glass of freshly squeezed fruit juice.</p>
+                            <p class="price">Ksh.500</p>
+                            <button class="btn btn-order">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <br><br>
+    <div class="contact-section text-center">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-4">
+                  <h5><b>Tasty Diner</b></h5>
+                  <p>936 Fulton Street, Lavington, Kenya </p>
+                  <p><a href="#" class="text-white">Contact Us</a> | 718-62-4000</p>
+              </div>
+              <div class="col-md-4">
+                  <h5>Join our Order List</h5>
+                  <input type="text" class="form-control" placeholder="Email address">
+                  <button type="submit" class="registerbtn">SIGN UP</button>
+              </div>
+              <div class="col-md-4">
+                  <h5><b>Follow Us</b></h5>
+                  <i class="fab fa-facebook fa-2x me-2"></i>
+                  <i class="fab fa-instagram fa-2x me-2"></i>
+                  <i class="fab fa-twitter fa-2x"></i>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <footer class="footer">
+      <p>&copy; 2025 Tasty Diner. All rights reserved.</p>
+  </footer>
+  
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
+ 
+</body>
+</html>

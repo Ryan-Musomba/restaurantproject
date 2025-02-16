@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home-Tasty Diner</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+  rel="stylesheet"
+/>
+
+
+<style>
+  body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.contact-section {
+            background-color: black;
+            color: white;
+            padding: 30px 10px;
+            margin-top: 20%;
+        }
+        .footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        
+        }
+.msg-col a{
+  display: inline-block;
+  text-decoration: none;
+  color: #555;
+  background: rgb(52, 48, 48);
+  font-size: 15px;
+  padding: 10px 35px;
+  border-radius: 30px;
+  margin-top: 25px;
+}
+body {
+    min-height: 100vh;
+    position: relative;
+    margin: 0;
+    padding-bottom: 100px; 
+    background-image: url(image1.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+
+
+  }
+  
+  .msg-container{
+  width: 600px;
+  height: 280px ;
+ max-width: 90%;
+ margin: 10% auto;
+ padding: 20px;
+ margin-left: 10%;
+ margin-top: 10%;
+           
+}
+ 
+.msg-container {
+            max-width: 90%;
+            margin: 10% auto;
+            padding: 20px;
+            margin-left: 10%;
+            margin-top: 10%;
+           
+          
+        }
+ .registerbtn{
+  display: inline-block;
+  text-decoration: none;
+  color: #555;
+  background: white;
+  font-size: 15px;
+  padding: 10px 35px;
+  border-radius: 30px;
+  margin-top: 10px;
+ }
+ @media (max-width: 768px) {
+    .msg-container {
+        width: 90%;
+        height: auto;
+        margin: 5% auto;
+        padding: 15px;
+    }
+
+    .contact-section .row {
+        text-align: center;
+    }
+
+    .contact-section .col-md-4 {
+        margin-bottom: 20px;
+    }
+
+    .footer {
+        font-size: 14px;
+    }
+
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .navbar-toggler {
+        margin-left: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .msg-container {
+        padding: 10px;
+    }
+
+    .registerbtn {
+        width: 100%;
+    }
+
+    .contact-section input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+
+</style>
+</head>
+<body >
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+          <div class="collapse navbar-collapse container-fluid" id="navbarNavAltMarkup">
+                
+                <a class="navbar-brand mx-auto " href="#">Tasty Diner</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav justify-content-center w-100">
+                    <a class="nav-link active" aria-current="page" href="home.html">HOME</a>
+                    <a class="nav-link active" href="menu.html">MENU</a>
+                    <a class="nav-link active" href="about.html">ABOUT</a>
+                    <a class="nav-link active" href="contact.html">CONTACT</a>
+                </div>
+                <ul class="navbar-nav d-flex flex-row">
+                    <!-- Icons -->
+                    <li class="nav-item me-3 me-lg-0">
+                        <a class="nav-link" href="#">
+                            <i class="fas fa-user"></i>
+                        </a>
+                      </li>
+                    <li class="nav-item me-3 me-lg-0">
+                        <a class="nav-link" href="#" aria-label="Shopping Cart">
+                            <i class="fas fa-shopping-cart"></i>
+                          </a>
+                    </li>
+                    <li class="nav-item me-3 me-lg-0">
+                      <a class="nav-link" href="#">
+                        <i class='fas fa-search'></i>
+                      </a>
+                    </li>
+                   </ul>
+              </div>
+              
+              <div class="d-flex align-items-center">
+                <button data-mdb-ripple-init type="button" class="btn me-3" 
+                style="background-color: #ff6600; color: white; border: none;">
+            Order Online
+        </button>
+            </div>
+          </nav>
+
+    </header>
+    <section class="msg-container" >
+    
+      <div class="msg-col" style="color: black; font-family: Arial, Helvetica, sans-serif; ">
+        <h3>History</h3>
+        <p> 
+          What started as a small dream some few years ago has now become a beloved gathering place for food lovers.
+        </p>
+        <p>Founded by <b>John Dine</b>,<b>Tasty Diner</b> began as a humble kitchen with a passion for fresh ingredients and bold flavors.From our very first dish to the ones we serve today,our goal has always been the same-bringing peaople together over great food  </p>
+        <p>With a commitment to quality,creativity and warm hospitality,we've grown into a cherished dining destination.Whether you're here for a casual meal or a special celebration,we welcome you to be part of our story</p>
+      </div>
+    </section>
+    <section class="msg-container" >
+      <h3>Mission </h3>
+      <p>At <b>Tasty Diner</b>,our mission is simple,to create unforgerrable dining experiences throught exceptional food,warm hospitality and a passion for quality.We are dedicating to using the most quality ingredients,crafting dishes that celebrate flavor and tradition while embracing innovation.</p>
+      <p>Whether it's a casual meal or a special occasion, we strive to make every visit feel like home-where great food,good company and genuine hospitality come together.Our goal is to not just serve meals but to create moments that bring people together and keep them coming back for more.</p>
+      
+      
+    </section>
+    <section class="msg-container">
+      <h3>Meet our team</h3>
+      <p>At Tasty Diner,our team is the heart of everything we do.From the kitchen to the dining room,each member brings passion,skill and dedication to creating an exceptional dinig experience for our guests</p>
+      <h3><b>John Dine</b>-Founder & Head Chef</h3>
+      <p>With a deep love for culinary arts and a vision to bring people together through food,John Dine started Tasty Diner with a commitment to quality and creativity. Their expertise and passion inspire every dish on our menu.</p>
+      <h3><b>Wayne Keli</b>-General Manager</h3>
+      <p>Leading our front-of-house team, Wayne Keli ensures that every guest feels welcomed and cared for. Their dedication to hospitality and smooth operations makes every dining experience memorable.</p>
+      <h3><b>Lloyd Warrid</b>-Executive Chef</h3>
+      <p>Bringing years of culinary experience, Lloyd Warrid leads our kitchen with innovation and precision. Their creativity and attention to detail help us deliver delicious, high-quality dishes every day.</p>
+      <h3><b>Our Staff</b>-The Heart of Our Restaurant</h3>
+      <p>From our talented chefs to our friendly servers and hardworking support staff, every team member plays a vital role in making Tasty Diner a place where people love to dine. Their dedication, warmth, and teamwork create the inviting atmosphere our guests have come to cherish.</p>
+      <p>We are more than just a team—we are a family, and we can’t wait to welcome you to our table!</p>
+    </section>
+    <section class="msg-container"></section>
+
+    <br><br><br><br>
+    <div class="contact-section text-center">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-4">
+                  <h5><b>Tasty Diner</b></h5>
+                  <p>936 Fulton Street, Lavington, Kenya </p>
+                  <p><a href="#" class="text-white">Contact Us</a> | 718-62-4000</p>
+              </div>
+              <div class="col-md-4">
+                  <h5>Join our Order List</h5>
+                  <input type="text" class="form-control" placeholder="Email address">
+                  <button type="submit" class="registerbtn">SIGN UP</button>
+              </div>
+              <div class="col-md-4">
+                  <h5><b>Follow Us</b></h5>
+                  <i class="fab fa-facebook fa-2x me-2"></i>
+                  <i class="fab fa-instagram fa-2x me-2"></i>
+                  <i class="fab fa-twitter fa-2x"></i>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <footer class="footer">
+      <p>&copy; 2025 Tasty Diner. All rights reserved.</p>
+  </footer>
+  
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
+ 
+</body>
+</html>
